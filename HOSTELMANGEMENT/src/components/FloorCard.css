@@ -1,0 +1,111 @@
+.floor-section {
+  margin-top: 35px;
+}
+
+.floor-title {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+.floor-title h2 {
+  margin: 0;
+
+  font-size: 23px;
+
+  color: #0f172a;
+}
+
+.floor-title p {
+  margin: 4px 0 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* Five rooms */
+
+.rooms-grid {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 18px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1200px) {
+
+  .rooms-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .rooms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .rooms-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+.floor-card {
+  background: #f8fafc;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 30px;
+  border: 1px solid #e2e8f0;
+}
+
+.floor-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.floor-title h2 {
+  margin: 0;
+  color: #1e293b;
+}
+
+.floor-title p {
+  color: #64748b;
+  margin-top: 6px;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 1200px) {
+  .rooms-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .rooms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

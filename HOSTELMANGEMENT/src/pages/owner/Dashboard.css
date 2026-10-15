@@ -1,0 +1,142 @@
+.dashboard-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.dashboard-content {
+  margin-left: 270px;
+  min-height: 100vh;
+}
+
+.dashboard-main {
+  padding: 35px;
+}
+
+.welcome-section {
+  margin-bottom: 30px;
+}
+
+.welcome-section h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.welcome-section p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboard-content {
+    margin-left: 0;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-main {
+    padding: 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hostel-section {
+  margin-top: 50px;
+}
+
+.hostel-heading {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.hostel-heading h1 {
+  margin: 0;
+
+  font-size: 28px;
+
+  color: #0f172a;
+}
+
+.hostel-heading p {
+  margin-top: 5px;
+
+  color: #64748b;
+}
+
+
+/* Legend */
+
+.room-legend {
+  display: flex;
+
+  gap: 20px;
+}
+
+.legend-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 14px;
+
+  color: #475569;
+}
+
+.legend-box {
+  width: 15px;
+
+  height: 15px;
+
+  border-radius: 4px;
+
+  display: inline-block;
+}
+
+.vacant-box {
+  background: #22c55e;
+}
+
+.occupied-box {
+  background: #ef4444;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .hostel-heading {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+}
